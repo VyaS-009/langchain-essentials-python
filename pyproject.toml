@@ -26,6 +26,9 @@ dev = [
     "mypy>=1.11.1"
 ]
 
+[tool.setuptools.packages.find]
+exclude = ["assets*", "studio*"]
+
 [tool.ruff]
 # What to check
 lint.select = [
@@ -55,4 +58,3 @@ lint.ignore = [
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
-
